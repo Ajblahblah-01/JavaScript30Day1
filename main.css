@@ -7,26 +7,22 @@ html {
 body, html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 .keys {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 100vh;
 }
 
-.key {
+.keys .key {
   border: .4rem solid black;
   border-radius: .5rem;
   margin: 1rem;
@@ -41,15 +37,7 @@ body, html {
   text-shadow: 0 0 .5rem black;
 }
 
-.playing {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  border-color: #ffc600;
-  -webkit-box-shadow: 0 0 1rem #ffc600;
-          box-shadow: 0 0 1rem #ffc600;
-}
-
-kbd {
+.keys .key kbd {
   display: block;
   font-size: 4rem;
 }
@@ -59,5 +47,13 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+.playing {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: #ffc600;
+  -webkit-box-shadow: 0 0 1rem #ffc600;
+          box-shadow: 0 0 1rem #ffc600;
 }
 /*# sourceMappingURL=main.css.map */
